@@ -1,0 +1,58 @@
+body {
+    background-color: #000;
+}
+
+/*------------ homepage -------------*/
+.logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 13%;
+}
+.home-title {
+    text-align: center;
+    font: normal normal normal 36px/55px Montserrat;
+    letter-spacing: 1.8px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin-top: 35px;
+}
+.fight-btn-div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+.fight-btn {
+    width: 563px;
+    height: 162px;
+    background: transparent url('../img/fight-btn.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+/*--------- Combat Menu ----------*/
+.analysis-item-left a figure img, .analysis-item-right a figure img {
+    width: 100%;
+}
+.analysis-item-left a, .analysis-item-right a {
+    text-decoration: none;
+}
+.analysis-item-left a figure figcaption, .analysis-item-right a figure figcaption {
+    text-align: left;
+    font: normal normal bold 30px/37px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-shadow: 15px 3px 6px #00000029;
+    text-transform: uppercase;
+    opacity: 1;
+    margin-top: -50px;
+}
+.analysis-item-left a figure figcaption {
+    padding-left: 30px;
+}
+.analysis-item-right a figure figcaption{
+    text-align: center;
+    padding-left: 80px;
+    margin-top: -95px;
+    width: 185px;
+}
