@@ -1,6 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../assets/img/logo.png';
-import {Link} from "react-router-dom";
 
 class Home extends React.Component {
   render() {
@@ -8,7 +8,7 @@ class Home extends React.Component {
       <div className="container-fluid">
         <div className="logo">
           <Link to="/">
-              <img src={logo} alt="logo"/>
+            <img src={logo} alt="logo" />
           </Link>
         </div>
         <h3 className="home-title">UFC Data Intelligence Platform</h3>
