@@ -1,8 +1,28 @@
+@font-face {
+  font-family: abraham;
+  src: url(../font/abraham.otf);
+}
+
 body {
     background-color: #000;
 }
 
 /*------------ homepage -------------*/
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
 .logo {
     flex: 1;
     display: flex;
@@ -33,10 +53,20 @@ body {
 /*--------- Combat Menu ----------*/
 .analysis-item-left a figure img, .analysis-item-right a figure img {
     width: 100%;
-    transition: transform .2s;
+    transition: .2s ease;
 }
 .analysis-item-left a figure img:hover, .analysis-item-right a figure img:hover {
     transform: scale(1.1);
+}
+.overlay:hover {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+    background-color: rgb(78,87,211);
 }
 .analysis-item-left a, .analysis-item-right a {
     text-decoration: none;
@@ -61,4 +91,156 @@ body {
     padding-left: 80px;
     margin-top: -95px;
     width: 185px;
+}
+#wave {
+    margin-top: -5%;
+}
+#wave img {
+    width: 100%;
+}
+
+/*---------- Fighter Profiling -----------*/
+#profiling-page {
+    width: 100%;
+    height: 100%;
+    background: transparent url('../img/profiling-bg.jpg') 0% 0% no-repeat;
+    background-size: cover;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(80, 90, 109, 0.7);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 150px;
+    border-top-right-radius: 0.25rem;
+}
+
+.sidenav a {
+    padding:18px 8px 18px 32px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+}
+span .toggle-icon {
+    width: 39px;
+    height: 39px;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .closebtn::before {
+    width: 0;
+    height: 0;
+}
+.sidenav a::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    -moz-border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    border-radius: 7.5px;
+    background-color: #939AA7;
+    margin-right: 1rem;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 3px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+span img {
+    margin-top: 25px;
+    margin-left: 35px;
+}
+.profiling-page-title h1 {
+    font-family: abraham;
+    font-size: 140px;
+    color: #fff;
+    line-height: 1;
+    margin-top: 3.7rem;
+}
+.profiling-page-title h1 span {
+    font-size: 186px;
+}
+.fighter-selection h3 {
+    display: inline-block;
+    font-family: abraham;
+    text-align: center;
+    background-color: #9D9A8E;
+    color: #111111;
+    font-weight: 600;
+    font-size: 45px;
+    text-transform: capitalize;
+    padding: 0.5rem 4.21rem;
+    margin-bottom: 0;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+.fighter-selection select {
+
+  /* styling */
+  background-color: transparent;
+  border: thin solid #9D9A8E;
+  border-radius: 4px;
+  display: block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+  width: 337px;
+
+  /* reset */
+
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.fighter-selection select {
+    text-align: left;
+    font-family: abraham;
+    font-weight: 600;
+    font-size: 26px;
+    letter-spacing: 0.78px;
+    color: #FFFFFF;
+    background: url('../img/arrow-dropdown.png') no-repeat right rgba(0, 0, 0, 0.3);
+    -webkit-appearance: none;
+    background-position-x: 285px;
+    background-repeat: no-repeat;
+}
+.fighter-selection select:focus {
+    border-color: inherit;
+}
+.fighter-selection .fight-on {
+    width: 337px;
+    height: 87px;
+    background: transparent url('../img/fight-on.png') 0% 0% no-repeat padding-box;
+    background-size: cover;
+    opacity: 1;
+    margin-top: 1rem;
+}
+.fighter-selection .active-years {
+    font-family: 'Montserrat', sans-serif;
 }
