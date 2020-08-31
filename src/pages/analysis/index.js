@@ -59,7 +59,7 @@ const Analysis = () => {
           </div>
           <div className="col-md-4">
             <div className="analysis-item-right">
-              <Link to="/fighter-profile">
+              <Link to="/fighter-profiling">
                 <figure>
                   <img src={khabib} alt="profile" />
                   <figcaption>Fighter Profiling</figcaption>

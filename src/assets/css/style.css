@@ -1,10 +1,15 @@
 @font-face {
-  font-family: abraham;
-  src: url(../font/abraham.otf);
+    font-family: abraham;
+    src: url('../font/abraham.otf');
+}
+@font-face {
+    font-family: beckman;
+    src: url('../font/beckman.otf');
 }
 
 body {
     background-color: #000;
+    font-size: 16px;
 }
 
 /*------------ homepage -------------*/
@@ -12,7 +17,7 @@ body {
     position: fixed;
     right: 0;
     bottom: 0;
-    min-width: 100%; 
+    min-width: 100%;
     min-height: 100%;
 }
 .content {
@@ -28,6 +33,9 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 13%;
+}
+.logo a img {
+    width: 615px;
 }
 .home-title {
     text-align: center;
@@ -140,7 +148,7 @@ span .toggle-icon {
     height: 39px;
 }
 .sidenav a:hover {
-  color: #f1f1f1;
+    color: #f1f1f1;
 }
 .sidenav .closebtn::before {
     width: 0;
@@ -158,30 +166,46 @@ span .toggle-icon {
     margin-right: 1rem;
 }
 .sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 3px;
-  font-size: 36px;
-  margin-left: 50px;
+    position: absolute;
+    top: 0;
+    right: 3px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
 span img {
     margin-top: 25px;
     margin-left: 35px;
+    margin-bottom: 50px;
 }
 .profiling-page-title h1 {
     font-family: abraham;
     font-size: 140px;
     color: #fff;
     line-height: 1;
+    padding-left: 3rem;
     margin-top: 3.7rem;
 }
 .profiling-page-title h1 span {
     font-size: 186px;
+}
+.fighter-selection h2 {
+    display: inline-block;
+    font-family: abraham;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 63px;
+    text-transform: capitalize;
+    width: 366px;
+    line-height: 1.5;
+    margin-bottom: 0;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
 }
 .fighter-selection h3 {
     display: inline-block;
@@ -192,31 +216,32 @@ span img {
     font-weight: 600;
     font-size: 45px;
     text-transform: capitalize;
-    padding: 0.5rem 4.21rem;
+    width: 366px;
+    line-height: 1.5;
     margin-bottom: 0;
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
 }
 .fighter-selection select {
 
-  /* styling */
-  background-color: transparent;
-  border: thin solid #9D9A8E;
-  border-radius: 4px;
-  display: block;
-  font: inherit;
-  line-height: 1.5em;
-  padding: 0.5em 3.5em 0.5em 1em;
-  width: 337px;
+    /* styling */
+    background-color: transparent;
+    border: thin solid #9D9A8E;
+    border-radius: 4px;
+    display: block;
+    font: inherit;
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em 2em;
+    width: 366px;
 
-  /* reset */
+    /* reset */
 
-  margin: 0;      
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 .fighter-selection select {
     text-align: left;
@@ -227,14 +252,37 @@ span img {
     color: #FFFFFF;
     background: url('../img/arrow-dropdown.png') no-repeat right rgba(0, 0, 0, 0.3);
     -webkit-appearance: none;
-    background-position-x: 285px;
+    background-position-x: 305px;
     background-repeat: no-repeat;
 }
 .fighter-selection select:focus {
     border-color: inherit;
 }
+.fighter-selection input {
+    text-align: left;
+    font-family: abraham;
+    font-weight: 600;
+    font-size: 26px;
+    letter-spacing: 0.78px;
+    color: #FFFFFF;
+    border: thin solid #9D9A8E;
+    border-radius: 4px;
+    display: block;
+    font: inherit;
+    line-height: 1.5rem;
+    padding: 1.2rem 3.5rem 1.2rem 1rem;
+    width: 366px;
+    margin: 0;
+    background-color: transparent;
+}
+.fighter-selection input::placeholder {
+    font-family: abraham;
+    font-weight: 600;
+    font-size: 26px;
+    color: #FFFFFF;
+}
 .fighter-selection .fight-on {
-    width: 337px;
+    width: 366px;
     height: 87px;
     background: transparent url('../img/fight-on.png') 0% 0% no-repeat padding-box;
     background-size: cover;
@@ -243,4 +291,116 @@ span img {
 }
 .fighter-selection .active-years {
     font-family: 'Montserrat', sans-serif;
+}
+.weight-icon {
+    width: 30.33px;
+    height: 29.07px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+/*------------ Fighter Profile --------------*/
+#fighter-profile-page {
+    width: 100%;
+    height: 100%;
+    background: transparent url('../img/profile-bg.jpg') 0% 0% no-repeat;
+    background-size: cover;
+}
+.fighter-bio {
+    background-color: rgba(201, 14, 39, 0.6);
+    border-radius: 31px;
+    padding-top: 25px;
+    padding-bottom: 85px;
+}
+.fighter-bio .bio-content {
+    padding-left: 350px;
+}
+.fighter-bio .bio-content h1 {
+    font-family: abraham;
+    font-weight: 600;
+    font-size: 57px;
+    color: #FFFFFF;
+    letter-spacing: 2.85px;
+}
+.fighter-bio .bio-content h1 span {
+    font-size: 78px;
+    letter-spacing: 3.9px;
+}
+.fighter-bio .bio-content img {
+    margin-top: -7px;
+    margin-right: 7px;
+}
+.fighter-bio .bio-content h3 {
+    font-family: abraham;
+    font-size: 42px;
+    letter-spacing: 1.05px;
+    color: #FFFFFF;
+}
+.fighter-bio .bio-content hr {
+    border-top: 1px solid #fff;
+    margin-right: 65px;
+}
+.dob {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    letter-spacing: 0.57px;
+    color: #FFFFFF;
+}
+.dob span {
+    color: #ec758c;
+}
+.bio-content .weight-class {
+    font-family: beckman;
+    font-size: 60px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+.bio-content .weight-class div span {
+    display: block;
+    font-size: 14px;
+}
+.bio-content .winning-percent {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    letter-spacing: 0px;
+    color: #fff;
+    margin-top: 15px;
+}
+.bio-content .winning-percent span {
+    color: #F64264;
+}
+.bio-content .others {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    letter-spacing: 0.57px;
+    color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.bio-content .others div {
+    margin-bottom: 1rem;
+}
+.bio-content .others div span {
+    display: block;
+    font-size: 20px;
+    color: #ec758c;
+}
+.fighter-bio .more-stat {
+    position: absolute;
+    width: 305px;
+    height: 148px;
+    background: transparent url('../img/view-stats.png') 0% 0% no-repeat padding-box;
+    background-size: cover;
+    opacity: 1;
+    margin-left: 350px;
+}
+.fighter-bio .fighter-pic {
+    position: absolute;
+    top: -30px;
+    width: 50%;
+    height: 884px;
+    margin-left: -50px;
 }
