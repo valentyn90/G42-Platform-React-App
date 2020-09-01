@@ -5,6 +5,7 @@ import Home from './pages/home';
 import Analysis from './pages/analysis';
 import FighterProfiling from './pages/fighter-profiling';
 import FighterProfile from './pages/fighter-profile/FighterProfile';
+import Comparison from './pages/comparison';
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
           </Route>
           <Route path="/fighter-profile">
             <FighterProfile />
+          </Route>
+          <Route path="/comparison">
+            <Comparison />
           </Route>
           <Route exact path="/">
             <Home />
