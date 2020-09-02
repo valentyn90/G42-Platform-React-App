@@ -622,6 +622,6 @@ span img {
 .fight-type .fight-btn {
     width: 192px;
     height: 104px;
-    background: transparent url(/static/media/fight.c979eed2.png) 0% 0% no-repeat padding-box;
+    background: transparent url('../img/fight.png') 0% 0% no-repeat padding-box;
     background-size: contain;
 }

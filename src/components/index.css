@@ -32,9 +32,30 @@
 .switch.switch--default > .switch-toggle.switch-toggle--on::before {
     /*background: #62c28e !important; */
 }
-.switch.switch--default > .switch-toggle.switch-toggle--on::after {
-    transform: translateX(144px);
+
+@media only screen and (min-width: 320px) {
+    .switch.switch--default > .switch-toggle.switch-toggle--on::after {
+        transform: translateX(239px);
+    }
 }
+@media only screen and (min-width: 1280px) {
+    .switch.switch--default > .switch-toggle.switch-toggle--on::after {
+        transform: translateX(130px);
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .switch.switch--default > .switch-toggle.switch-toggle--on::after {
+        transform: translateX(156px);
+    }
+}
+@media only screen and (min-width: 1800px) {
+
+    .switch.switch--default > .switch-toggle.switch-toggle--on::after {
+        transform: translateX(227px);
+    }
+}
+
 .switch.switch--default > .switch-toggle.switch-toggle--off::before {
     /*background: #cccccc !important;*/
 }
