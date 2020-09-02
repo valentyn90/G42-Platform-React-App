@@ -110,7 +110,7 @@ body {
 /*---------- Fighter Profiling -----------*/
 #profiling-page {
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     background: transparent url('../img/profiling-bg.jpg') 0% 0% no-repeat;
     background-size: cover;
 }
@@ -285,7 +285,7 @@ span img {
     width: 366px;
     height: 87px;
     background: transparent url('../img/fight-on.png') 0% 0% no-repeat padding-box;
-    background-size: cover;
+    background-size: contain;
     opacity: 1;
     margin-top: 1rem;
 }
@@ -303,7 +303,7 @@ span img {
 /*------------ Fighter Profile --------------*/
 #fighter-profile-page {
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     background: transparent url('../img/profile-bg.jpg') 0% 0% no-repeat;
     background-size: cover;
 }
@@ -393,7 +393,7 @@ span img {
     width: 305px;
     height: 148px;
     background: transparent url(../img/view-stats.png) 0% 0% no-repeat padding-box;
-    background-size: cover;
+    background-size: contain;
     opacity: 1;
     margin-left: 350px;
 }
@@ -609,6 +609,9 @@ span img {
     margin-left: 185px;
     z-index: 1;
 }
+.fight-type {
+    margin-top: 165px;
+}
 .fight-type .name {
     font-family: abraham;
     font-size: 36px;
@@ -617,7 +620,8 @@ span img {
     margin-bottom: 0;
 }
 .fight-type .fight-btn {
-    width: 200px;
+    width: 192px;
     height: 104px;
-    background: transparent url(../img/fight.png) 0% 0% no-repeat padding-box;
+    background: transparent url('../img/fight.png') 0% 0% no-repeat padding-box;
+    background-size: contain;
 }
