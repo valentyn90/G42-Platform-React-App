@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/G42-Platform/static/css/main.bec9d516.chunk.css",
+    "main.js": "/G42-Platform/static/js/main.dab82c04.chunk.js",
+    "main.js.map": "/G42-Platform/static/js/main.dab82c04.chunk.js.map",
+    "runtime-main.js": "/G42-Platform/static/js/runtime-main.796c2f06.js",
+    "runtime-main.js.map": "/G42-Platform/static/js/runtime-main.796c2f06.js.map",
+    "static/css/2.11829350.chunk.css": "/G42-Platform/static/css/2.11829350.chunk.css",
+    "static/js/2.9a568a51.chunk.js": "/G42-Platform/static/js/2.9a568a51.chunk.js",
+    "static/js/2.9a568a51.chunk.js.map": "/G42-Platform/static/js/2.9a568a51.chunk.js.map",
+    "index.html": "/G42-Platform/index.html",
+    "precache-manifest.d351d8dc83e08a0aa26c94ac90d471e5.js": "/G42-Platform/precache-manifest.d351d8dc83e08a0aa26c94ac90d471e5.js",
+    "service-worker.js": "/G42-Platform/service-worker.js",
+    "static/css/2.11829350.chunk.css.map": "/G42-Platform/static/css/2.11829350.chunk.css.map",
+    "static/css/main.bec9d516.chunk.css.map": "/G42-Platform/static/css/main.bec9d516.chunk.css.map",
+    "static/js/2.9a568a51.chunk.js.LICENSE.txt": "/G42-Platform/static/js/2.9a568a51.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/G42-Platform/static/media/view-stats.7df0b649.png",
+    "static/media/championship.png": "/G42-Platform/static/media/championship.2c68d0d1.png",
+    "static/media/combat-analysis.png": "/G42-Platform/static/media/combat-analysis.a568c8f2.png",
+    "static/media/khabib.png": "/G42-Platform/static/media/khabib.e993ad82.png",
+    "static/media/logo.png": "/G42-Platform/static/media/logo.384d3d2b.png",
+    "static/media/menu-toggle.png": "/G42-Platform/static/media/menu-toggle.f40534ce.png",
+    "static/media/realtime-combat-analysis.png": "/G42-Platform/static/media/realtime-combat-analysis.65be53c7.png",
+    "static/media/vid.mp4": "/G42-Platform/static/media/vid.83b31bca.mp4",
+    "static/media/wave.gif": "/G42-Platform/static/media/wave.b94ac86f.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.796c2f06.js",
+    "static/css/2.11829350.chunk.css",
+    "static/js/2.9a568a51.chunk.js",
+    "static/css/main.bec9d516.chunk.css",
+    "static/js/main.dab82c04.chunk.js"
+  ]
+}
